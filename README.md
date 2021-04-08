@@ -1,8 +1,8 @@
 # Discord-Soft-Block
-Are you friends acting like retards and you don't want to see the stuff they post temporarily? Do you want to block people without having to hurt their feelings once they realize they've been blocked? Or do you simply hate seeing the "5 blocked messages" field that pokes your eyes out? If so, this script is for you.
-This script lets you completely hide messages from users whose messages you don't want to see, and without them being able to know you did it. 
+Are you friends acting like retards and you temporarily don't want to see the stuff they post? Do you want to block people without having to hurt their feelings since they'd normally realize they've been blocked? Or do you simply hate seeing the "5 blocked messages" field that pokes your eyes out? If so, this script is for you.
+This script lets you completely hide messages from users whose messages you don't want to see, and without them being able to know you did it. This action is also completely reversible, given that you will have to run this script every time discord starts in order to have the desired effects. If you want the effects to stop, simply restart discord.
 
-Open discord and press **control + shift + I** to open developer console. Copy the code down below, but edit it so that you put the userIDs of people you want to soft block. User IDs are obtainable by right clicking their name and clicking 'copy ID' when you are in discord developer mode.
+In order to run the script, open discord and press **control + shift + I** to open the developer console. Copy the code down below, but edit it so that you put the userIDs of people you want to soft block instead of the placeholder "user1", "user2" etc. User IDs are obtainable by right clicking their name and clicking 'copy ID' when you are in [discord developer mode](https://discordia.me/en/developer-mode). Once you've edited the code, paste it into the console and press enter. Close the console once you're ready to go, and that's it.
 
 
 ```js
@@ -12,7 +12,7 @@ function hideUser(){
 	var user = [
 	  "user1",
 	  "user2",
-	  "user3"
+	  "etc"
 	];
 	var arrayLength = user.length;
 	for (var i = 0; i < arrayLength; i++) {
@@ -47,6 +47,6 @@ function hideUser(){
 		});
 	}
 };
-setInterval(hideUser, 500); 
+setInterval(hideUser, 500); //might wanna edit this to be lower 
 
 ```
