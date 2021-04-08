@@ -47,6 +47,6 @@ function hideUser(){
 		});
 	}
 };
-setInterval(hideUser, 500); //might wanna edit this to be lower 
+setInterval(hideUser, 500); //how quickly the messages are removed
 
 ```
