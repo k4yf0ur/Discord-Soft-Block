@@ -2,9 +2,9 @@ function hideUser(){
 	var savedUser = "temp";	
 	//User IDs obtainable by right clicking their name and clicking 'copy ID' when you are in discord developer mode
 	var user = [
-	  "userID1",
-	  "userID2",
-	  "userID3..."
+	  "user1",
+	  "user2",
+	  "etc"
 	];
 	var arrayLength = user.length;
 	for (var i = 0; i < arrayLength; i++) {
@@ -39,4 +39,4 @@ function hideUser(){
 		});
 	}
 };
-setInterval(hideUser, 500); 
+setInterval(hideUser, 500); //how quickly the messages are removed
